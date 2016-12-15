@@ -88,5 +88,33 @@ namespace Snake_uno
 
             plansza_gry.Invalidate();
         }
-    }
+
+        private void plansza_gry_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics canvas = e.Graphics;
+            if (!glowne.KoniecGry)
+
+                for (int i = 0; i < Snake.Count; i++)
+
+                {
+                    Brush snakeColour;
+                    if (i == 0)
+                        snakeColour = Brushes.Blue;     //glowka
+                    else
+                        snakeColour = Brushes.Green;    //cialo
+
+                    //rysowanie wezyka
+                    canvas.FillEllipse(snakeColour,
+                        new Rectangle(Snake[i].X * glowne.Wysokosc,
+                                      Snake[i].Y * glowne.Szerokosc,
+                                      glowne.Wysokosc, glowne.Szerokosc));
+
+
+                    //rysowanie jedzenia
+                    canvas.FillEllipse(Brushes.Red,
+                        new Rectangle(jedzenie.X * glowne.Wysokosc,
+                             jedzenie.Y * glowne.Wysokosc, glowne.Szerokosc, glowne.Wysokosc));
+
+                }
+        }
 }

@@ -44,6 +44,7 @@
             this.plansza_gry.TabIndex = 0;
             this.plansza_gry.TabStop = false;
             this.plansza_gry.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.plansza_gry.Paint += new System.Windows.Forms.PaintEventHandler(this.plansza_gry_Paint);
             // 
             // label1
             // 
