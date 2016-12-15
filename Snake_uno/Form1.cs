@@ -197,5 +197,22 @@ namespace Snake_uno
             glowne.KoniecGry = true;
         }
 
+        private void jedz()
+        {
+            //dodawanie kolejnych punktow do ciala
+            punkt punkt = new punkt
+            {
+                X = Snake[Snake.Count - 1].X,
+                Y = Snake[Snake.Count - 1].Y
+            };
+            Snake.Add(punkt);
+
+            //aktualizacja licznika wyniku
+            glowne.Wynik += glowne.Punkty;
+            wyswietlacz_wyniku.Text = glowne.Wynik.ToString();
+
+            GeneratorJedzenia();
+        }
+
     }
 }
