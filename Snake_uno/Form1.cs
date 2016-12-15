@@ -33,5 +33,24 @@ namespace Snake_uno
         {
 
         }
+
+        private void StartGame()
+
+        {
+
+            KomunikatKoncaGry.Visible = false;
+            new glowne();
+
+            Snake.Clear();
+            punkt head = new Snake.punkt();
+            head.X = 10;
+            head.Y = 5;
+            Snake.Add(head);
+
+            // wyswietlacz_wyniku = glowne.Wynik.ToString();
+            GeneratorJedzenia();
+
+        }
+
     }
 }
