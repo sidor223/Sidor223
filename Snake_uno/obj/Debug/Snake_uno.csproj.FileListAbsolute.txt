@@ -1,0 +1,2 @@
+c:\users\pawel\documents\visual studio 2015\Projects\Snake_uno\Snake_uno\bin\Debug\Snake_uno.exe.config
+D:\Snake_uno\Snake_uno\bin\Debug\Snake_uno.exe.config

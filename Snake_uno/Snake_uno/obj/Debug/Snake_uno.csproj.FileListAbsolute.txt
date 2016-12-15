@@ -1,1 +1,9 @@
 c:\users\pawel\documents\visual studio 2015\Projects\Snake_uno\Snake_uno\bin\Debug\Snake_uno.exe.config
+D:\Snake_uno\Snake_uno\Snake_uno\bin\Debug\Snake_uno.exe.config
+D:\Snake_uno\Snake_uno\Snake_uno\bin\Debug\Snake_uno.exe
+D:\Snake_uno\Snake_uno\Snake_uno\bin\Debug\Snake_uno.pdb
+D:\Snake_uno\Snake_uno\Snake_uno\obj\Debug\Snake_uno.csprojResolveAssemblyReference.cache
+D:\Snake_uno\Snake_uno\Snake_uno\obj\Debug\Snake_uno.Properties.Resources.resources
+D:\Snake_uno\Snake_uno\Snake_uno\obj\Debug\Snake_uno.csproj.GenerateResource.Cache
+D:\Snake_uno\Snake_uno\Snake_uno\obj\Debug\Snake_uno.exe
+D:\Snake_uno\Snake_uno\Snake_uno\obj\Debug\Snake_uno.pdb
