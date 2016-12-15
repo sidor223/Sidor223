@@ -122,5 +122,65 @@ namespace Snake_uno
                 KomunikatKoncaGry.Text = koniecGry;
                 KomunikatKoncaGry.Visible = true;
             }
+
+                    private void RuchGracza()
+        {
+            for (int i = Snake.Count - 1; i >= 0; i--)
+            {
+                if (i == 0)
+                {
+                    switch (glowne.Kierunek)
+                    {
+                        case Direction.wPrawo:
+                            Snake[i].X++;
+                            break;
+                        case Direction.wLewo:
+                            Snake[i].X--;
+                            break;
+                        case Direction.wGore:
+                            Snake[i].Y--;
+                            break;
+                        case Direction.wDol:
+                            Snake[i].Y++;
+                            break;
+
+                    }
+
+                    int maxXPos = plansza_gry.Size.Width / glowne.Wysokosc;
+                    int maxYPos = plansza_gry.Size.Height / glowne.Szerokosc;
+
+                    //kKolizcja z bokami planszy
+                    if (Snake[i].X < 0 || Snake[i].Y < 0
+                        || Snake[i].X >= maxXPos || Snake[i].Y >= maxYPos)
+                    {
+                        smierc();
+                    }
+
+
+                    //Kolizja z cialem
+                    for (int j = 1; j < Snake.Count; j++)
+                    {
+                        if (Snake[i].X == Snake[j].X &&
+                           Snake[i].Y == Snake[j].Y)
+                        {
+                            smierc();
+                        }
+                    }
+
+                    //Kolizja z jedzeniem
+                    if (Snake[0].X == jedzenie.X && Snake[0].Y == jedzenie.Y)
+                    {
+                        jedz();
+                    }
+
+                }
+                else
+                {
+                    Snake[i].X = Snake[i - 1].X;
+                    Snake[i].Y = Snake[i - 1].Y;
+                }
+            }
         }
+
+    }
 }
