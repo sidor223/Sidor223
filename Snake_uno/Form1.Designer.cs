@@ -28,21 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.plansza_gry = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.wyswietlacz_wyniku = new System.Windows.Forms.Label();
             this.KomunikatKoncaGry = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plansza_gry)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // plansza_gry
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(438, 344);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.plansza_gry.Cursor = System.Windows.Forms.Cursors.Default;
+            this.plansza_gry.Location = new System.Drawing.Point(12, 12);
+            this.plansza_gry.Name = "plansza_gry";
+            this.plansza_gry.Size = new System.Drawing.Size(438, 344);
+            this.plansza_gry.TabIndex = 0;
+            this.plansza_gry.TabStop = false;
+            this.plansza_gry.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label1
             // 
@@ -80,10 +81,10 @@
             this.Controls.Add(this.KomunikatKoncaGry);
             this.Controls.Add(this.wyswietlacz_wyniku);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.plansza_gry);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plansza_gry)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -91,7 +92,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox plansza_gry;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label wyswietlacz_wyniku;
         private System.Windows.Forms.Label KomunikatKoncaGry;

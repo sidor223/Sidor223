@@ -52,5 +52,17 @@ namespace Snake_uno
 
         }
 
+        private void GeneratorJedzenia()
+        {
+            int maxXPos = plansza_gry.Size.Width / glowne.Wysokosc;
+            int maxYPos = plansza_gry.Size.Height / glowne.Szerokosc;
+
+            Random random = new Random();
+            jedzenie = new punkt();
+            jedzenie.X = random.Next(0, maxXPos);
+            jedzenie.Y = random.Next(0, maxYPos);
+
+        }
+
     }
 }
