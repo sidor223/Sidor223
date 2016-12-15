@@ -63,6 +63,30 @@ namespace Snake_uno
             jedzenie.Y = random.Next(0, maxYPos);
 
         }
+        private void AktualizacjaObrazu(object sender, EventArgs e)
+        {
+            if (glowne.KoniecGry == true)
+            {
+                if (rozpoznawanie_klawiszy.KeyPressed(Keys.Enter))
+                {
+                    StartGame();
+                }
+            }
+            else
+            {
+                if (rozpoznawanie_klawiszy.KeyPressed(Keys.Right) && glowne.Kierunek != Direction.wLewo)
+                    glowne.Kierunek = Direction.wPrawo;
+                else if (rozpoznawanie_klawiszy.KeyPressed(Keys.Left) && glowne.Kierunek != Direction.wPrawo)
+                    glowne.Kierunek = Direction.wLewo;
+                else if (rozpoznawanie_klawiszy.KeyPressed(Keys.Up) && glowne.Kierunek != Direction.wDol)
+                    glowne.Kierunek = Direction.wGore;
+                else if (rozpoznawanie_klawiszy.KeyPressed(Keys.Down) && glowne.Kierunek != Direction.wGore)
+                    glowne.Kierunek = Direction.wDol;
 
+                RuchGracza();
+            }
+
+            plansza_gry.Invalidate();
+        }
     }
 }

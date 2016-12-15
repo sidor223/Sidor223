@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Snake_uno
 {
-    class rozpoznawanie_klaiwszy
+    class rozpoznawanie_klawiszy
     {
         private static Hashtable keyTable = new Hashtable(); // zaladowanie listy dostepnych klawiszy do uzycia
 
