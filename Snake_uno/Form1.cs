@@ -191,5 +191,11 @@ namespace Snake_uno
         {
             rozpoznawanie_klawiszy.ChangeState(e.KeyCode, true);
         }
+
+        private void smierc()
+        {
+            glowne.KoniecGry = true;
+        }
+
     }
 }
