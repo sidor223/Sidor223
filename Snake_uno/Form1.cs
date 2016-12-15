@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WMPLib;
 
 namespace Snake_uno
 {
     public partial class Form1 : Form
     {
-
+        WindowsMediaPlayer player = new WindowsMediaPlayer();
         private List<punkt> Snake = new List<punkt>();
         private punkt jedzenie = new punkt();
 
@@ -122,7 +123,7 @@ namespace Snake_uno
                 KomunikatKoncaGry.Text = koniecGry;
                 KomunikatKoncaGry.Visible = true;
             }
-
+        }
                     private void RuchGracza()
         {
             for (int i = Snake.Count - 1; i >= 0; i--)

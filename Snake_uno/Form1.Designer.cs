@@ -29,20 +29,24 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.plansza_gry = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.wyswietlacz_wyniku = new System.Windows.Forms.Label();
             this.KomunikatKoncaGry = new System.Windows.Forms.Label();
             this.CzasGry = new System.Windows.Forms.Timer(this.components);
+            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             ((System.ComponentModel.ISupportInitialize)(this.plansza_gry)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
             // 
             // plansza_gry
             // 
+            this.plansza_gry.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.plansza_gry.Cursor = System.Windows.Forms.Cursors.Default;
             this.plansza_gry.Location = new System.Drawing.Point(12, 12);
             this.plansza_gry.Name = "plansza_gry";
-            this.plansza_gry.Size = new System.Drawing.Size(438, 344);
+            this.plansza_gry.Size = new System.Drawing.Size(439, 327);
             this.plansza_gry.TabIndex = 0;
             this.plansza_gry.TabStop = false;
             this.plansza_gry.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -62,7 +66,7 @@
             // 
             this.wyswietlacz_wyniku.AutoSize = true;
             this.wyswietlacz_wyniku.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.wyswietlacz_wyniku.Location = new System.Drawing.Point(508, 99);
+            this.wyswietlacz_wyniku.Location = new System.Drawing.Point(527, 76);
             this.wyswietlacz_wyniku.Name = "wyswietlacz_wyniku";
             this.wyswietlacz_wyniku.Size = new System.Drawing.Size(0, 31);
             this.wyswietlacz_wyniku.TabIndex = 2;
@@ -71,16 +75,27 @@
             // 
             this.KomunikatKoncaGry.AutoSize = true;
             this.KomunikatKoncaGry.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.KomunikatKoncaGry.Location = new System.Drawing.Point(31, 35);
+            this.KomunikatKoncaGry.Location = new System.Drawing.Point(31, 18);
             this.KomunikatKoncaGry.Name = "KomunikatKoncaGry";
             this.KomunikatKoncaGry.Size = new System.Drawing.Size(0, 31);
             this.KomunikatKoncaGry.TabIndex = 3;
+            // 
+            // axWindowsMediaPlayer1
+            // 
+            this.axWindowsMediaPlayer1.Enabled = true;
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(480, 280);
+            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(106, 42);
+            this.axWindowsMediaPlayer1.TabIndex = 4;
+            this.axWindowsMediaPlayer1.Visible = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(636, 417);
+            this.Controls.Add(this.axWindowsMediaPlayer1);
             this.Controls.Add(this.KomunikatKoncaGry);
             this.Controls.Add(this.wyswietlacz_wyniku);
             this.Controls.Add(this.label1);
@@ -90,6 +105,7 @@
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.plansza_gry)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -102,6 +118,7 @@
         private System.Windows.Forms.Label wyswietlacz_wyniku;
         private System.Windows.Forms.Label KomunikatKoncaGry;
         private System.Windows.Forms.Timer CzasGry;
+        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
     }
 }
 

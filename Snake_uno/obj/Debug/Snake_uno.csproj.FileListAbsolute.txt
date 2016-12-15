@@ -8,3 +8,8 @@ D:\Snake_uno\Snake_uno\obj\Debug\Snake_uno.Properties.Resources.resources
 D:\Snake_uno\Snake_uno\obj\Debug\Snake_uno.csproj.GenerateResource.Cache
 D:\Snake_uno\Snake_uno\obj\Debug\Snake_uno.exe
 D:\Snake_uno\Snake_uno\obj\Debug\Snake_uno.pdb
+D:\Snake_uno\Snake_uno\obj\Debug\Interop.WMPLib.dll
+D:\Snake_uno\Snake_uno\obj\Debug\AxInterop.WMPLib.dll
+D:\Snake_uno\Snake_uno\obj\Debug\Snake_uno.csproj.ResolveComReference.cache
+D:\Snake_uno\Snake_uno\bin\Debug\Interop.WMPLib.dll
+D:\Snake_uno\Snake_uno\bin\Debug\AxInterop.WMPLib.dll
