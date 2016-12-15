@@ -182,5 +182,14 @@ namespace Snake_uno
             }
         }
 
+        private void Form1_KeyUp(object sender, KeyEventArgs e)
+        {
+            rozpoznawanie_klawiszy.ChangeState(e.KeyCode, false);
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            rozpoznawanie_klawiszy.ChangeState(e.KeyCode, true);
+        }
     }
 }
