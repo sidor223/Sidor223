@@ -116,5 +116,11 @@ namespace Snake_uno
                              jedzenie.Y * glowne.Wysokosc, glowne.Szerokosc, glowne.Wysokosc));
 
                 }
+            else
+            {
+                string koniecGry = " Koniec gry! \n Wynik:" + glowne.Wynik + "\n Wciśnij enter, aby zagrać ponownie";
+                KomunikatKoncaGry.Text = koniecGry;
+                KomunikatKoncaGry.Visible = true;
+            }
         }
 }
