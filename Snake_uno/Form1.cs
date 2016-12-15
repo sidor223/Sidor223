@@ -42,7 +42,7 @@ namespace Snake_uno
             new glowne();
 
             Snake.Clear();
-            punkt head = new Snake.punkt();
+            punkt head = new Snake_uno.punkt();
             head.X = 10;
             head.Y = 5;
             Snake.Add(head);
@@ -213,6 +213,8 @@ namespace Snake_uno
 
             GeneratorJedzenia();
         }
+
+
 
     }
 }

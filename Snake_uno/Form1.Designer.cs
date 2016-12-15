@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.plansza_gry = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.wyswietlacz_wyniku = new System.Windows.Forms.Label();
             this.KomunikatKoncaGry = new System.Windows.Forms.Label();
+            this.CzasGry = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.plansza_gry)).BeginInit();
             this.SuspendLayout();
             // 
@@ -99,6 +101,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label wyswietlacz_wyniku;
         private System.Windows.Forms.Label KomunikatKoncaGry;
+        private System.Windows.Forms.Timer CzasGry;
     }
 }
 
